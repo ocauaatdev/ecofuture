@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background-color: #201B2C;
+}
+/*MENU SUPERIOR*/
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.menu{
+    color: #3CD343;
+    font-size: 17px;
+}
+.menusuperior{
+    padding: 30px;
+    background-color: #2F2841;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menuicon{
+    font-size: 30px;
+    padding: 0 20px;
+
+}
+.barrapes{
+    background-color: #514869;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    width: 550px;
+    padding: 15px;
+    box-shadow: 0px 10px 40px #00000056;
+    
+}
+::placeholder{
+    color: rgb(211, 211, 211);
+}
+.iconlink{
+    color: #3CD343;
+    text-decoration: none;
+}
+.iconlink :hover{
+    color: white;
+    transition: .3s;
+}
+.icones{
+    display: flex;
+}
+/*MENU INFERIOR*/
+/*MENU INFERIOR MOBILE*/
+.menu-inferior-mobile{
+    background-color:#2F2841;
+    display: none;
+}
+.menu-inferior-txt-mobile{
+    list-style: none;
+}
+.link-menu-mobile{
+    text-decoration: none;
+    color: #3CD343;
+    font-weight: 700;
+}
+.link-menu-mobile:hover{
+    color: white;
+    background-color: #0f0a1938;
+    transition: 0.5s;
+}
+.mobile-menuicon, #show{
+    background-color: transparent;
+    color: #3CD343;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    font-size: 15px;
+    font-weight: 700;
+    display: none;
+}
+
+/*MENU INFERIOR PC*/
+.menu-inferior{
+    background-color:#2F2841;
+}
+.menu-inferior-txt{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.link-menu{
+    text-decoration: none;
+    color: #3CD343;
+    font-weight: 700;
+}
+.link-menu:hover{
+    color: white;
+    transition: 0.5s;
+}
+/*CARROSSEL*/
+.carrossel{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    
+    margin-top: 3%;
+    margin-left: 6%;
+
+}
+.carrossel .slide{
+    width: 500%;
+    animation-name: animacao;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    display: flex;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.carrossel .slide img{
+    width: 20%;
+    
+}
+@keyframes animacao{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+    100%{margin-left: -400%;}
+}
+
+/*CONTEUDO DO SITE*/
+.destaq{
+    margin-top: 3%;
+    color: #3CD343;
+}
+.txtdestaq {
+    display: flex;
+    justify-content: space-between;  
+    list-style: none;
+    margin: 0 4%;
+}
+.txtdestaq li{
+    font-size: 18px;
+}
+.txtdestaq a{
+    color: #3CD343;
+    text-decoration: none;
+}
+.txtdestaq b{
+    text-transform: uppercase;
+}
+.txtdestaq a:hover{
+    transition: .3s;
+    color: white;
+}
+/*CARD PRODUTOS*/
+.card{
+    position: relative;
+    width: 228px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #2F2841;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.card:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.card .produtoimg{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+.card .produtoimg img{  
+    transition: 0.5s;
+    width: 200px;
+    height: 150px;
+}
+.card:hover .produtoimg img{
+    width: 133px;
+    height: 100px;
+    
+}
+.card .content8x{
+    display: flex;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.card .content8x h3{
+    font-size: 18px;
+    color: white;
+    font-weight: 580;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.card .content8x .preço{
+    font-size: 24px;
+    color: #3CD343;
+    font-weight: 580;
+    letter-spacing: 1px;
+}
+.card .content8x .buy{
+    position: relative;
+    top: 40px;
+    opacity: 1;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #201B2C;
+    text-decoration: none;
+    background-color: #3CD343;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.card:hover .content8x .buy{
+    top: 0px;
+    opacity: 1;
+}
+.card:hover .content8x .buy:hover{
+    background-color: white;
+    transition: .4s;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards li{
+    list-style: none;
+    padding: 0 35px;
+}
+.catalogo{
+    margin-top: 20px;
+}
+
+/*SESSAO DOACAO*/
+.txtdoacao{
+    margin-top: 5%;
+    width: 455px;
+    height: 314px;
+    
+}
+.txtdoacao h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #3CD343;
+    text-align: justify;
+}
+.txtdoacao p{
+    font-size: 19px;
+    text-align: justify;
+    color: white;
+}
+.doar{
+    width: 180px;
+    height: 84px;
+    font-size: 19px;
+    border-radius: 15px;
+    color: #201B2C;
+    background-color: #3CD343;
+    border: none;
+}
+.doar:hover{
+    background-color: white;
+    cursor: pointer;
+    transition: .4s;
+}
+.doe{
+    margin-top: 3%;
+    display: inline;
+}
+.txtdoacao, .doe{
+    margin-left: 3%;
+}
+.info-doacao{
+    display: inline-block;
+    width: 555px;
+    margin-left: 20%;
+}
+.div-folha{
+    display: inline-block;
+}
+.folhaimg{
+    height: 355px;
+}
+
+/*RODAPE*/
+.rodape{
+    background-color: #0F0A19;
+    margin-top: 170px;
+    height: 100%;
+}
+.quemsomos{
+    width: 345px; 
+    font-size: 19px;
+    text-align: justify;
+    display: inline-block;
+    
+}
+.quemsomos h3{
+    color: #3CD343;
+}
+.quemsomos p{
+    color: white;
+}
+.suporte{
+    font-size: 19px;
+    text-align: justify;
+    width: 345px;
+    display: inline-block;
+    
+}
+.suporte h3{
+    color: #3CD343;
+}
+.suporte a{
+    text-decoration: none;
+    color: white;
+}
+.suporte a:hover{
+    transition: .4s;
+    color: #3CD343;
+}
+.colaboradores{
+    font-size: 19px;
+    text-align: justify;
+    width: 345px;
+    color: white;
+    display: inline-block;
+}
+.colaboradores h3{
+    color: #3CD343;
+}
+.info-rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*LOGO DAS EMPRESAS*/
+.empresas{
+    margin-top: 5%;
+}
+.empresas h1{
+    text-align: center;
+    color: #3CD343;
+}
+.emprecard{
+    position: relative;
+    width: 228px;
+    height: 210px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: inline-block;
+    background-color: #2F2841;
+    box-shadow: 0px 10px 40px #00000056;
+    align-items: center;
+    
+}
+.logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*REDES SOCIAIS*/
+.redesociais{
+    margin-top: 9%;
+}
+.redesociais h3{
+    color: #3CD343;
+    text-align: center;
+}
+.redesociais ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.redesociais ul li{
+    font-size: 35px;
+    list-style: none;
+    padding: 0 10px;
+}
+.redesociais a{
+    color: #3CD343;
+    text-decoration: none;
+}
+.redesociais a:hover{
+    color: white;
+    transition: .4s;
+}
+
+/*RESPONSIVIDADE DOS CARDS*/
+
+@media(max-width:1200px){
+    .card4{
+        display: none;
+    }
+
+    .rodapetxt, .quemsomos, .suporte, .colaboradores, li, p, a{
+        flex-wrap: wrap;
+    }
+    .logos, li, .emprecard{
+        flex-wrap: wrap;
+        
+    } 
+}
+
+@media(max-width:1173px){
+    .info-doacao{
+        margin-left: 5%;
+    }
+    .quemsomos{
+        width: 250px;
+    }
+}
+
+@media(max-width:990px){
+    .colaboradores{
+        width: 255px;
+    }
+}
+@media(max-width:987px){
+    .folhaimg{
+        width: 255px;
+        height: 255px;
+    }
+}
+
+@media(max-width:928px){
+    #empresa4{
+        display: none;
+    }
+}
+
+@media(max-width:890px){
+    .card3{
+        display: none;
+    }
+}
+
+@media(max-width:858px){
+    .rodapetxt, .quemsomos, .suporte, .colaboradores, li, p, a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    input.barrapes{
+        width: 275px;
+    }
+
+    .div-folha{
+        display: none;
+    }
+    .doacao-div, .info-doacao, .txtdoacao, .doe{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2px;
+    }
+    .txtdoacao{
+        width: 355px;
+    }
+}
+
+@media(max-width:760px){
+    .info-rodape{
+        display: flex;
+        flex-direction: column;
+    }
+    #cadastre{
+        display: none;
+    }
+}
+
+@media(max-width:713px){
+    .emprecard{
+        width: 114px;
+        height: 105px;   
+        transition: 0.3s; 
+}
+}
+
+@media(max-width:638px){
+    .menu-inferior-mobile{
+        display: block;
+    }
+    .menu-txt-mobile{
+        display: block;
+    }
+    .menu-inferior-txt-mobile{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+        display: none;
+    }
+    .botao{
+        display: inline-block;
+    }
+    .mobile-menuicon, #show{
+        display: flex;
+    }
+    .mobile-menuicon, #show:hover{
+    color: white;
+    transition: 0.5s;
+    }
+    .menu-inferior{
+        display: none;
+    }
+    input.barrapes{
+        width: 200px;
+    }
+   
+}
+
+@media(max-width:621px){
+    .cards{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+   /* .emprecard{
+        width: 114px;
+        height: 105px;   
+        transition: 0.3s; 
+}*/
+    
+}
+
+@media (max-width:585px){
+    .logo{
+        display: none;
+    } 
+}
+@media(max-width:488px){
+    #empresa4{
+        display: none;
+    }
+    
+}
