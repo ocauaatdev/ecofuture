@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../imgs/LOGO ECO FUTURE.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/pagamento-page.css">
+
+    <script src="https://kit.fontawesome.com/4494a50fc2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <title>Pagamento</title>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="user-info">
+            <h3>Informações para Entrega</h3>
+            
+            <!--NOME COMPLETO-->
+            <div class="label-float">
+                <label for="nome" id="labelNome">Nome Completo: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <!--EMAIL-->
+            <div class="label-float">
+                <label for="email" id="labelEmail">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
+            </div>
+
+            <!--Endereço-->
+            <div class="label-float">
+                <label for="endereco" id="labelEndereco">Endereço: </label>
+                <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço completo. Rua tal e Numero X" required>
+            </div>
+
+            <!--Cidade-->
+            <div class="label-float">
+                <label for="cidade" id="labelCidade">Cidade: </label>
+                <input type="text" name="cidade" id="cidade" placeholder="Digite o nome da sua cidade" required>
+            </div>
+
+            <!--ESTADO-->
+            <div class="label-float">
+                <label for="estado" id="labelEstado">Estado: </label><br>
+                <select name="estado" id="estado">
+                    <option>Acre</option>
+                    <option>Alagoas</option>
+                    <option>Amapá</option>
+                    <option>Amazonas</option>
+                    <option>Bahia</option>
+                    <option>Ceará</option>
+                    <option>Espírito Santo</option>
+                    <option>Goiás</option>
+                    <option>Maranhão</option>
+                    <option>Mato Grosso</option>
+                    <option>Mato Grosso do Sul</option>
+                    <option>Minas Gerais</option>
+                    <option>Pará</option>
+                    <option>Paraíba</option>
+                    <option>Paraná</option>
+                    <option>Pernambuco</option>
+                    <option>Piauí</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Rio Grande do Norte</option>
+                    <option>Rio Grande do Sul</option>
+                    <option>Rondônia</option>
+                    <option>Roraima</option>
+                    <option>Santa Catarina</option>
+                    <option>São Paulo</option>
+                    <option>Sergipe</option>
+                    <option>Tocantins</option>
+                </select>
+            </div>
+
+            <!--CEP-->
+            <div class="label-float">
+                <label for="cep" id="labelCep">CEP: </label>
+                <input type="text" name="cep" id="cep" placeholder="Digite o seu CEP" required>
+            </div>
+        </div>
+
+
+        <div class="pagamento">
+            <h3>Pagamento</h3>
+
+            <!--METODO DE PAGAMENTO-->
+            <p>Selecione o método de pagamento</p>
+
+            <div class="imgs-metodopagamento">
+                <img src="../imgs/cartao-credito.png" alt="cartao de crédito">
+                <img src="../imgs/pix.png" alt="Pix">
+                <img src="../imgs/boleto.jpg" alt="boleto">
+            </div>
+
+                <div class="selecao-pagamento">
+            <!--CARTAO DE CREDITO-->
+            <input type="radio" name="metodopagamento" id="cartaocredito">
+            <label for="cartaocredito">Cartão de Crédito</label>
+            
+            <!--PIX-->
+            <input type="radio" name="metodopagamento" id="pix">
+            <label for="pix">Pix</label>
+
+            <!--Boleto-->
+            <input type="radio" name="metodopagamento" id="boleto">
+            <label for="boleto">Boleto</label>
+                </div>
+
+            <!--NUMERO CARTAO-->
+            <div class="label-float">
+                <label for="numerocartao">Número do cartão: </label>
+                <input type="number" name="numerocartao" id="numerocartao">
+            </div>
+            
+            <!--VENCIMENTO-->
+            <div class="label-float">
+                <label for="vencimento">Vencimento: </label>
+                <input type="date" name="vencimento" id="vencimento">
+            </div>
+
+            <!--CODIGO SEGURANÇA-->
+            <div class="label-float">
+                <label for="cvv">Código de Segurança</label>
+                <input type="number" name="cvv" id="cvv">
+            </div>
+            
+
+            <!--CONCLUIR PAGAMENTO-->
+            <button class="comprar">Concluir Pagamento</button>
+            
+        </div>
+    </div>
+
+    <script src="../js/pagamento.js"></script>
+</body>
+</html>

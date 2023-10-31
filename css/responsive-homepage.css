@@ -1,0 +1,280 @@
+@media (max-width:1440px) {
+    #card5{
+        display: none;
+    }
+    .item-count{
+        margin-top: -2%;
+    }
+    .conteiner{
+        width: 100%;
+        margin-left: 0;
+        transform: translate(0);
+    }
+
+}
+
+@media (max-width:1372px){
+    .cards{
+        gap: 1.5rem;
+    }
+}
+
+@media(max-width:1215px){
+    #card4{
+        display: none;
+    }
+    .quemsomos{
+        width: 275px; 
+        font-size: 17px;
+    }
+    .suporte{
+        width: 275px;
+        font-size: 17px;
+    }
+    .contato{
+        width: 275px;
+        font-size: 17px;
+    }
+}
+
+@media(max-width:1135px){
+    .info-home h2{
+        font-size: 45px;
+    }
+    .text{
+        display: none;
+    }
+    .txtCabecalho ul{
+        gap: 1.5rem;
+    }
+    .dropdownPerfil{
+        width: auto;
+    }
+}
+
+@media(max-width:1078px){
+    .logo-texto{
+        display: none;
+    }
+    .logo-icone{
+        display: block;
+    }
+}
+
+@media(max-width:1040px){
+    .emprecard{
+        width: 200px;
+        height: 195px;
+    }
+    #prev-btn, #next-btn{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media(max-width:970px){
+    .quemsomos{
+        width: 230px;
+        font-size: 15px;
+    }
+    .suporte{
+        width: 230px;
+        font-size: 15px;
+    }
+    .contato{
+        width: 230px;
+        font-size: 15px;
+    }
+    .item-count{
+        margin-top: -2.5%;
+    }
+}
+
+@media(max-width:940px){
+    .emprecard{
+        width: 195px;
+        height: 175px;
+    }
+}
+
+@media(max-width:930px){
+    .img-conteiner{
+        height: 260px;
+    }
+}
+
+@media(max-width:916px){
+    .txtCabecalho{
+        display: none;
+    }
+    .logoEco p{
+        display: block;
+    }
+    .menuhamburguer{
+        display: inline;
+    }
+    .info-home h2{
+        font-size: 30px;
+    }
+    .beneficios div{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:900px){
+    .cards{
+        flex-direction: column;
+    }
+    #card4,#card5{
+        display: block;
+    }
+    /* .produto{
+        width: 295px;
+        height: 370px;
+    }
+    .imgproduto{
+        width: 275px;
+    height: 240px;
+    } */
+}
+
+@media(max-width:853px){
+    .beneficios div{
+        display: none;
+    }
+    .assine{
+        display: none;
+    }
+    .beneficiosBtn{
+        display: block;
+    }
+}
+
+@media(max-width:840px){
+    .logos{
+        flex-wrap: wrap;
+    }
+    .emprecard{
+        margin-bottom: 5%;
+    }
+}
+
+@media(max-width:830px){
+    .quemsomos{
+        width: 175px;
+        font-size: 13px;
+    }
+    .suporte{
+        width: 175px;
+        font-size: 13px;
+    }
+    .contato{
+        width: 175px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width:776px){
+    .logoEco p{
+        display: none;
+    }
+    .menuicon{
+        padding: 5px;
+    }
+}
+
+@media(max-width:700px){
+    .txtdestaq a,h2{
+        font-size: 19px;
+    }
+}
+
+@media(max-width:685px){
+    .img-conteiner{
+        height: 200px;
+    }
+}
+
+@media(max-width:663px){
+    .search{
+        width: 300px;
+    }
+    .search .input input{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:650px){
+    .info-rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .quemsomos{
+        font-size: 19px;
+        width: 345px;
+        margin-bottom: 5%;
+    }
+    .suporte{
+        font-size: 19px;
+        width: 345px;
+        margin-bottom: 5%;
+    }
+    .contato{
+        font-size: 19px;
+        width: 345px;
+        margin-bottom: 5%;
+    }
+    .item-count{
+        margin-top: -3%;
+    }
+    .custom-alert {
+        top: -70px; /* Inicialmente, o alerta está fora da tela */
+    }
+    
+    .custom-alert.show {
+        top: 10px; /* Mostra o alerta descendo de cima para baixo */
+    }
+}
+
+@media(max-width:628px){
+    .info-home h2{
+        font-size: 25px;
+    }
+    .home-button{
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:597px){
+    .beneficios{
+        margin-top: 0;
+    }
+}
+
+@media(max-width:551px){ 
+    .txtdestaq{
+        font-size: 16px;
+    }
+}
+@media(max-width:543px){
+    .search{
+        width: 250px;
+    }
+}
+@media(max-width:520px){
+    .txtdestaq a,h2{
+        font-size: 16px;
+    }
+}
+@media(max-width:530px){
+    .item-count{
+        margin-top: -5%;
+    }
+}
+@media(max-width:500px){
+    .info-home h2{
+        font-size: 18px;
+    }
+}

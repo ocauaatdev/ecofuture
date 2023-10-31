@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins'
+}
+.conteiner{
+    width: 100%;
+    display: flex;
+}
+
+/*USER CONTEINER*/
+.user-info{
+    width: 50%;
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e4e4e4;
+}
+
+.label-float{
+    margin-top: 10px;
+}
+.label-float input{
+    width: 100%;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 1px solid #00000054;
+    border-radius: 5px;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+}
+.label-float select{
+    padding: 10px 10px;
+    display: inline-block;
+    border: 1px solid #00000054;
+    border-radius: 5px;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+}
+
+/*PAGAMENTO CONTEINER*/
+.pagamento{
+    width: 50%;
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.selecao-pagamento{
+    display: flex;
+}
+.selecao-pagamento label{
+    padding: 0 15px 0 10px;
+}
+.imgs-metodopagamento img{
+    width: 70px;
+}
+.imgs-metodopagamento{
+    margin-bottom: 3%;
+}
+
+.comprar{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5%;
+    background-color: #0A242A;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h3{
+    font-size: 27px;
+    color: #0A242A;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+p{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+
+@media(max-width:1056px){
+    .label-float input{
+        font-size: 13px;
+    }
+
+}
+@media(max-width:890px){
+    .conteiner{
+        display: block;
+    }
+    .user-info{
+        width: 100%;
+    }
+    .pagamento{
+        width: 100%;
+    }
+    .label-float input{
+        font-size: 16px;
+    }
+}
+@media(max-width:550px){
+    .label-float input{
+        font-size: 14px;
+    }
+}

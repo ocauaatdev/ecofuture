@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../imgs/LOGO ECO FUTURE.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/login-style.css">
+    <link rel="stylesheet" href="../css/cadastro-login-responsive.css">
+
+    <script src="https://kit.fontawesome.com/4494a50fc2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    <title>Login de Usuario</title>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="formulario">
+            
+            <div class="voltar-home">
+                <a href="../pages/home-page.html">
+                    <i class="fa-solid fa-house home"></i> <span>Inicio</span>
+                </a>
+            </div>
+
+            <div class="img-conteiner">
+                <img src="../imgs/Logo-nomelado.png" alt="">
+            </div>
+            <h2>Login de Usuário</h2>
+            
+            <div class="label-float"> 
+                <label id="usuarioLabel" for="usuario">Nome de Usuário</label>
+                <input type="text" name="usuario" id="usuario" placeholder="Digite o seu nome de usuário">
+               
+            </div>
+
+            <div class="label-float">
+                <label id="senhaLabel" for="senha">Digite sua senha</label>
+                <i class="fa-solid fa-eye fa-eye-slash" id="btn-senha" onclick="mostrarSenha()"></i>
+
+                <input type="password" class="senha" name="senha" id="senha" placeholder="Digite sua senha">
+                
+            </div>
+
+            <div>
+                <button onclick="entrar()">Entrar</button>
+            </div>
+
+            <p><a class="criar-conta" href="../pages/cadastro-page.html">Não tem uma conta? Crie uma!</a></p>
+            <p><a class="esqueci-senha" href="">Esqueci minha senha</a></p>
+
+        </div>
+        </div>
+    
+
+</div> <!--FIM DIV CONTEINER-->
+
+<script src="../js/login.js"></script>
+    
+</body>
+</html>

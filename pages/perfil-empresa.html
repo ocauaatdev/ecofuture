@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/menu-rodape.css">
+    <link rel="stylesheet" href="../css/responsive-homepage.css">
+    <link rel="stylesheet" href="../css/perfil-empresa.css">
+    <link rel="shortcut icon" href="../imgs/Logo-fundo-verde-branco.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/cards-dos-produtos.css">
+    <link rel="stylesheet" href="../css/perfil-mobile.css">
+
+    <script src="https://kit.fontawesome.com/4494a50fc2.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script> 
+  <title>Perfil da Empresa</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <!--LOGOS-->
+          <div class="logoEco">
+            <a href="../pages/home-page.html">
+            <img src="../imgs/Logo-fundo-verde-branco.png" class="logo-icone" alt="">
+            <img src="../imgs/Logo-nomelado.png" alt="logo eco future" class="logo-texto"></a>
+        </div>
+    
+            <!--ELEMENTOS DO CABEÇALHO-->
+            <div class="txtCabecalho">
+                <nav>
+                    <ul class="opcoesMenu">
+                        <li><a href="../pages/camisas.html">Camisas Eco</a></li>
+                        <li><a href="../pages/bags.html">Eco Bags</a></li>
+                        <li><a href="../pages/cosmeticos.html">Cosmeticos</a></li>
+                        <li>Mais <i onclick="abrirsubmenu()" class="fa-solid fa-chevron-down btnCategorias"></i>
+                            <!--Dropdown-->
+                            <ul class="dropdown">
+                                <li><a href="../pages/ecoplus.html">Assinatura Eco+</a></li>
+                                <li><a href="../pages/catalogo.html">Todos Produtos</a></li>
+                                <li><a href="../pages/higiene.html">Higiene</a></li>
+                                <li><a href="../pages/camisas.html">Camisas Eco</a></li>
+                                <li><a href="../pages/bags.html">Eco Bags</a></li>
+                                <li><a href="../pages/cosmeticos.html">Cosméticos</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+    
+            <!--BARRA DE PESQUISA-->
+            <div class="search">
+                <div class="lupa"></div>
+                <div class="input">
+                    <input type="text" placeholder="Procure" id="mysearch">
+                </div>
+                <span class="clear" onclick="document.getElementById
+                ('mysearch').value = '' "></span>
+             </div>
+    
+             <!--ICONES DE USUARIO-->
+             <div class="icons">
+    
+                <ul class="iconesMenu">
+    
+                    <!--ICONE PERFIL-->
+                    <li class="iconPerfil">
+                        <a class="menuicon" href="../pages/perfil-user.html">
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>     
+                        <span class="text">Perfil</span></a>
+    
+                        <ul class="dropdownPerfil">
+                            <li id="login-button"><a class="perfilOptions" href="../pages/login-page.html">Login e Cadastro</a></li>
+                            <li class="perfilOptions" id="sairOption" onclick="deslogar()"><a href="">Sair</a></li>   
+                            <li id="empresa-acesso" class="perfilOptions"><a href="../pages/login-empresa.html">Acesso parceiros</a></li>
+                        </ul>
+                    </li>
+                    <!--FIM ICONE PERFIL-->
+    
+                    <li><a class="menuicon" href="../pages/carrinho.html">
+                        <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span class="text">Carrinho</span>
+                        <span id="cart-item-count" class="item-count">0</span>
+                    </a></li>        
+    
+                <!--ICONE MENU-->
+                <li><span class="icon menuicon menuhamburguer btnMenu"><i class="fa-solid fa-bars"></i></span></li>   
+            </ul> 
+             </div>
+    
+        </header>
+    
+        <!--MENU LATERAL-->
+        <div class="menuLateral">
+            <h3>Fechar Opções <i class="fa-solid fa-xmark btnFechar"></i></h3> 
+            <ul>
+                <li><a href="../pages/home-page.html">Página inicial</a></li>
+                <li><a href="../pages/catalogo.html">Todos Produtos</a></li>
+                <li><a href="#" class="categorias">Categorias
+                    <i class="fa-solid fa-caret-down"></i></a></li>
+                <ul class="firstOption">
+                    <li><a href="../pages/camisas.html">Camisas</a></li>
+                    <li><a href="../pages/bags.html">Eco Bags</a></li>
+                    <li><a href="../pages/cosmeticos.html">Cosméticos</a></li>
+                    <li><a href="../pages/higiene.html">Higiene</a></li>
+                </ul>
+    
+                <li><a href="../pages/ecoplus.html">Assine Eco+</a></li>
+    
+                
+                <li><a href="#" class="ajudaUsuario">Ajuda ao usuário 
+                    <i class="fa-solid fa-caret-down"></i></a></li>
+                    <ul class="secondOption">
+                        <li><a class="btnSuporte" href="#suporte">Suporte</a></li>
+                        <li><a href="../pages/perfil-user.html">Meu Perfil</a></li>
+                        <li class="loginBtn"><a href="../pages/login-page.html">Login</a></li>
+                        <li class="cadastrarBtn"><a href="../pages/cadastro-page.html">Cadastrar</a></li>
+                        <li class="acesso-parceiros"><a href="../pages/login-empresa.html">Acesso para parceiros</a></li>
+                        <li class="sairbtn"><a id="sairbtn" href="" onclick="deslogar()">Sair</a></li>
+                    </ul>
+            </ul>
+        </div>
+        
+
+    <main>
+        <div class="conteiner-perfil">
+
+            <div class="opcoes-perfil">
+
+                <div class="perfil-infos">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span>Nome da Empresa</span>
+                </div>
+
+                <div class="config-conta">
+                    <i class="fa-solid fa-pen-to-square"></i><span>Configurações da conta</span>
+                </div>
+                <div class="meus-produtos">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Meus Produtos</span>
+                </div>
+                <div class="envio">
+                    <i class="fa-solid fa-truck"></i>
+                    <span>Envio de Pedidos</span>
+                </div>
+                <div class="notificacoes">
+                    <i class="fa-solid fa-bell"></i>
+                    <span>Notificações</span>
+                </div>
+            </div> <!--FIM OPÇÕES PERFIL-->
+
+            <!-- CONTEUDO PERFIL -->
+            <div class="conteudo-perfil">
+
+            </div> <!--FIM CONTEUDO PERFIL-->
+            
+            </div> <!--FIM CONTEINER PERFIL-->
+
+            <!-- MOBILE -->
+            <div class="conteiner-perfil-mobile">
+
+                <div class="opcoes-perfil-mobile">
+    
+                    <div class="perfil-infos">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>Nome da Empresa</span>
+                    </div>
+    
+                    <div class="config-conta" onclick="abrirconfigs()">
+                        <i class="fa-solid fa-pen-to-square"></i><span>Configurações da conta</span>
+                    </div>
+                    <div class="meus-produtos" onclick="abrirProdutos()">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <span>Meus Produtos</span>
+                    </div>
+                    <div class="envio" onclick="abrirEnvios()">
+                        <i class="fa-solid fa-truck"></i>
+                        <span>Envio de Pedidos</span>
+                    </div>
+                    <div class="notificacoes" onclick="abrirnotificacoes()">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>Notificações</span>
+                    </div>
+                </div> <!--FIM OPÇÕES PERFIL-->
+                
+                </div> <!--FIM CONTEINER PERFIL MOBILE-->
+
+
+    </main>
+    <div class="direito-autoral">
+    <i class="fa-regular fa-copyright"></i> Todos Direitos reservados à Eco-Future
+    </div>
+
+    <script src="../js/perfil-empresa.js"></script>
+    <script src="../js/logar-e-sair.js"></script>
+    <script src="../js/menus.js"></script>
+    <script src="../js/salvarpagina.js"></script>
+    <script src="../js/contador-carrinho.js"></script>
+    
+</body>
+</html>

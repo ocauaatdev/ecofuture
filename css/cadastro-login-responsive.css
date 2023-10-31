@@ -1,0 +1,8 @@
+@media(max-width:773px){
+    .img-conteiner{
+        display: none;
+    }
+    .form-conteiner{
+        width: 100%;
+    }
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="../../css/menu-rodape.css">
+    <link rel="shortcut icon" href="../../imgs/Logo-fundo-verde-branco.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/compra-page.css">
+    <link rel="stylesheet" href="../../css/responsive-homepage.css">
+    <link rel="stylesheet" href="../../css/cards-dos-produtos.css">
+
+    <script src="https://kit.fontawesome.com/4494a50fc2.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script> 
+  <title>Produto</title>
+</head>
+<header class="cabecalho">
+    <!--LOGOS-->
+      <div class="logoEco">
+        <a href="../../pages/home-page.html">
+        <img src="../../imgs/Logo-fundo-verde-branco.png" class="logo-icone" alt="">
+        <img src="../../imgs/Logo-nomelado.png" alt="logo eco future" class="logo-texto"></a>
+    </div>
+
+        <!--ELEMENTOS DO CABEÇALHO-->
+        <div class="txtCabecalho">
+            <nav>
+                <ul class="opcoesMenu">
+                    <li><a href="../../pages/camisas.html">Camisas Eco</a></li>
+                    <li><a href="../../pages/bags.html">Eco Bags</a></li>
+                    <li><a href="../../pages/cosmeticos.html">Cosmeticos</a></li>
+                    <li>Mais <i onclick="abrirsubmenu()" class="fa-solid fa-chevron-down btnCategorias"></i>
+                        <!--Dropdown-->
+                        <ul class="dropdown">
+                            <li><a href="../../pages/ecoplus.html">Assinatura Eco+</a></li>
+                            <li><a href="../../pages/catalogo.html">Todos Produtos</a></li>
+                            <li><a href="../../pages/higiene.html">Higiene</a></li>
+                            <li><a href="../../pages/camisas.html">Camisas Eco</a></li>
+                            <li><a href="../../pages/bags.html">Eco Bags</a></li>
+                            <li><a href="../../pages/cosmeticos.html">Cosméticos</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <!--BARRA DE PESQUISA-->
+        <div class="search">
+            <div class="lupa"></div>
+            <div class="input">
+                <input type="text" placeholder="Procure" id="mysearch">
+            </div>
+            <span class="clear" onclick="document.getElementById
+            ('mysearch').value = '' "></span>
+         </div>
+
+         <!--ICONES DE USUARIO-->
+         <div class="icons">
+
+            <ul class="iconesMenu">
+
+                <!--ICONE PERFIL-->
+                <li class="iconPerfil">
+                    <a class="menuicon" href="../../pages/perfil-user.html">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>     
+                    <span class="text">Perfil</span></a>
+
+                    <ul class="dropdownPerfil">
+                        <li id="login-button"><a class="perfilOptions" href="../../pages/login-page.html">Login e Cadastro</a></li>
+                        <li class="perfilOptions" id="sairOption" onclick="deslogar()"><a href="">Sair</a></li>   
+                        <li id="empresa-acesso" class="perfilOptions"><a href="../../pages/login-empresa.html">Acesso parceiros</a></li>
+                    </ul>
+                </li>
+                <!--FIM ICONE PERFIL-->
+
+                <li><a class="menuicon" href="../../pages/carrinho.html">
+                    <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                    <span class="text">Carrinho</span>
+                    <span id="cart-item-count" class="item-count">0</span>
+                </a></li>        
+
+            <!--ICONE MENU-->
+            <li><span class="icon menuicon menuhamburguer btnMenu"><i class="fa-solid fa-bars"></i></span></li>   
+        </ul> 
+         </div>
+
+    </header>
+
+    <!--MENU LATERAL-->
+    <div class="menuLateral">
+        <h3>Fechar Opções <i class="fa-solid fa-xmark btnFechar"></i></h3> 
+        <ul>
+            <li><a href="../../pages/home-page.html">Página inicial</a></li>
+            <li><a href="../../pages/catalogo.html">Todos Produtos</a></li>
+            <li><a href="#" class="categorias">Categorias
+                <i class="fa-solid fa-caret-down"></i></a></li>
+            <ul class="firstOption">
+                <li><a href="../../pages/camisas.html">Camisas</a></li>
+                <li><a href="../../pages/bags.html">Eco Bags</a></li>
+                <li><a href="../../pages/cosmeticos.html">Cosméticos</a></li>
+                <li><a href="../../pages/higiene.html">Higiene</a></li>
+            </ul>
+
+            <li><a href="../../pages/ecoplus.html">Assine Eco+</a></li>
+
+            
+            <li><a href="#" class="ajudaUsuario">Ajuda ao usuário 
+                <i class="fa-solid fa-caret-down"></i></a></li>
+                <ul class="secondOption">
+                    <li><a class="btnSuporte" href="#suporte">Suporte</a></li>
+                    <li><a href="../../pages/perfil-user.html">Meu Perfil</a></li>
+                    <li><a href="../../pages/login-page.html">Login</a></li>
+                    <li><a href="../../pages/cadastro-page.html">Cadastrar</a></li>
+                    <li class="acesso-parceiros"><a href="../../pages/login-empresa.html">Acesso para parceiros</a></li>
+                    <li><a id="sairbtn" href="" onclick="deslogar()">Sair</a></li>
+                </ul>
+        </ul>
+    </div>
+
+    <main>
+        <div class="custom-alert" id="alert">Mensagem de Alerta</div>
+        
+        <!--PRODUTO CONTEINER-->
+        <div class="produto-conteiner">
+            <div class="conteiner">
+                <!--IMAGEM DO PRODUTO AQUI-->
+                <img class="produto-img" src="../../imgs/Higiene/higiene-8.jpeg" alt="">
+
+                <div class="produto-info">
+                    <h3>KIT SABONETES</h3>
+                    <p>Fabricado com os melhores recursos disponíveis, esse produto é um testemunho da nossa busca incansável por excelência. Cada detalhe foi minuciosamente projetado e produzido para garantir sua durabilidade, ao mesmo tempo em que minimiza o impacto ambiental.</p>
+                    <h3 class="preco-produto">R$Xx,xx</h3>
+
+                    <button class="adicionar-carrinho" onclick="addCart('conteiner')">Adicionar ao carrinho</button>
+                    <a href="../../pages/pagamento.html"><button class="comprar">Comprar</button> </a>
+                    <i class="fa-regular fa-heart"></i>
+                     
+                </div>
+            </div>
+        </div>
+
+        <!--FIM PRODUTO CONTEINER-->
+
+        <div class="destaques">
+        
+            <div class="cards">
+        
+                <!--CARD 1-->
+            <div id="card1" class="produto">
+                <a href="#"><img class="imgproduto" src="../../imgs/camisetas/camisa.webp" alt="camisa"></a>
+                <h3>Camiseta Eco</h3>
+                <div class="preco-parcelado">
+                    <label for="span">3x </label><span>R$00,00</span>
+                </div>
+                <div class="precoVista">
+                    <label for="span">À vista </label><span class="preco">R$00,00</span>
+                <i class="fa-sharp fa-solid fa-bag-shopping" onclick="addToCart('card1')"></i>
+                </div>
+                
+            </div>
+        
+            <!--CARD 2-->
+            <div id="card2" class="produto">
+                <!-- Colocar pagina de redirecionamento certa -->
+                <a href="#"><img class="imgproduto" src="../../imgs/ecobags/bag-1.png" alt="sacola"></a>
+                <h3>Eco Bag</h3>
+                <div class="preco-parcelado">
+                    <label for="span">3x </label><span>R$00,00</span>
+                </div>
+                <div class="precoVista">
+                    <label for="span">À vista </label><span class="preco">R$00,00</span>
+                <i class="fa-sharp fa-solid fa-bag-shopping" onclick="addToCart('card2')"></i>
+                </div>
+            </div>
+        
+            <!--CARD 3-->
+            <div id="card3" class="produto">
+                <!-- Colocar pagina de redirecionamento certa -->
+                <a href="#"><img class="imgproduto" src="../../imgs/cosmeticos/cosmetico-1.png" alt="sacola"></a>
+                <h3>Kit Cosmeticos</h3>
+                <div class="preco-parcelado">
+                    <label for="span">3x </label><span>R$00,00</span>
+                </div>
+                <div class="precoVista">
+                    <label for="span">À vista </label><span class="preco">R$00,00</span>
+                <i class="fa-sharp fa-solid fa-bag-shopping" onclick="addToCart('card3')"></i>
+                </div>
+            </div>
+        
+            <!--CARD 4-->
+            <div id="card4" class="produto">
+                <!-- Colocar pagina de redirecionamento certa -->
+                <a href="#"><img class="imgproduto" src="../../imgs/Higiene/higiene-1.png" alt="sacola"></a>
+                <h3>Kit Higiene</h3>
+                <div class="preco-parcelado">
+                    <label for="span">3x </label><span>R$00,00</span>
+                </div>
+                <div class="precoVista">
+                    <label for="span">À vista </label><span class="preco">R$00,00</span>
+                <i class="fa-sharp fa-solid fa-bag-shopping" onclick="addToCart('card4')"></i>
+                </div>
+            </div>
+        
+            <!--CARD 5-->
+            <div id="card5" class="produto">
+                <!-- Colocar pagina de redirecionamento certa -->
+                <a href="#"><img class="imgproduto" src="../../imgs/ecobags/bag-2.png" alt="cosmetico"></a>
+                <h3>Eco Bag</h3>
+                <div class="preco-parcelado">
+                    <label for="span">3x </label><span>R$00,00</span>
+                </div>
+                <div class="precoVista">
+                    <label for="span">À vista </label><span class="preco">R$00,00</span>
+                <i class="fa-sharp fa-solid fa-bag-shopping" onclick="addToCart('card5')"></i>
+                </div>
+            </div>
+            
+            </div><!--FIM DA DIV CARDS-->
+           </div><!--FIM DA DIV DESTAQUES-->
+    </main>
+
+    <footer class="rodape">
+        
+        <div class="info-rodape">
+           <div class="quemsomos"><h3>Quem nós somos</h3>
+            <p>A Eco-Future foi criada com propósito de ajudar a combater as práticas de desmatamento que nos ultimos tempos tem sido muito comuns( ... )</p></div>
+
+            <div id="suporte" class="suporte"><h3>Suporte - Duvidas Frequentes</h3>
+            <button onclick="exibirResposta('resposta1')">Qualidade do produto 
+                <span><i class="fa-solid fa-chevron-down btnCategorias"></i></span>
+            </button>
+            <div id="resposta1">
+                <p>Nossos produtos tem uma das melhores qualidades! As empresas parceiras disponibilizam produtos que não agridem o meio-ambiente, mas que mantém a qualidade sempre visando a satisfação do cliente.</p>
+            </div>
+            <button onclick="exibirResposta('resposta2')">Política de Devolução e Troca
+                <span><i class="fa-solid fa-chevron-down btnCategorias"></i></span>
+            </button>
+            <div id="resposta2">
+                <p>Caso seja necessário realizar alguma troca ou devolução, basta ir na aba do perfil e fazer a solicitação de acordo com a sua necessidade. Caso aprovado será notificado!</p>
+            </div>
+            <button onclick="exibirResposta('resposta3')">Segurança e Privacidade
+                <span><i class="fa-solid fa-chevron-down btnCategorias"></i></span>
+            </button>
+            <div id="resposta3">
+                <p>No nosso site de compras, a sua segurança e privacidade são a nossa principal prioridade. Utilizamos tecnologias avançadas de criptografia para proteger todas as suas informações pessoais e financeiras, garantindo sua total confidencialidade durante todo o processo de compra.</p>
+            </div>
+            <button onclick="exibirResposta('resposta4')">Como acompanhar minha entrega?
+                <span><i class="fa-solid fa-chevron-down btnCategorias"></i></span>
+            </button>
+            <div id="resposta4">
+                <p>Para acompanhar sua compra vá na aba do seu Perfil e clique em Acompanhar Pedido, lá estará as notificações a respeito da onde seu produto se encontra.</p>
+            </div>
+            </div>
+
+            <div class="contato"><h3>Informações para Contato</h3>
+                <a href="../../pages/login-empresa.html">Acesso para parceiros</a> <br>
+                Telefone: (99)9999-9999 <br>
+                E-mail: ecofuturecontato@gmail.com
+            </div>
+       </div>
+
+       <!--LOGO DAS EMPRESAS-->
+    <div class="empresas">
+
+        <h1>COLABORADORES</h1>
+
+        <div class="logos">
+        <div class="emprecard" id="empresa1">
+            </div>
+
+        <div class="emprecard" id="empresa2">
+        </div>
+
+        <div class="emprecard" id="empresa3">
+        </div>
+
+        <div class="emprecard" id="empresa4">
+        </div>
+        </div>
+
+    </div>
+    <!--FIM DAS LOGOS-->
+</footer>
+<div class="direito-autoral">
+    <i class="fa-regular fa-copyright"></i> Todos Direitos reservados à Eco-Future
+</div>
+
+    <script src="../../js/logar-e-sair.js"></script>
+    <script src="../../js/menus.js"></script>
+    <script src="../../js/salvarpagina.js"></script>
+    <script src="../../js/addcart.js"></script>
+    <script src="../../js/suporte.js"></script>
+    <script src="../../js/addcart-individual.js"></script>
+    <script src="../../js/contador-carrinho.js"></script>
+    
+</body>
+</html>

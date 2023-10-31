@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../imgs/LOGO ECO FUTURE.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/cadastro-style.css">
+    <link rel="stylesheet" href="../css/cadastro-login-responsive.css">
+
+    <script src="https://kit.fontawesome.com/4494a50fc2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+    <title>Cadastro para Parceiros</title>
+</head>
+<body>
+
+    <div class="conteiner">
+        <div class="formulario">
+            <div class="voltar-home">
+                <a href="../pages/home-page.html">
+                    <i class="fa-solid fa-house home"></i> <span>Inicio</span>
+                </a>
+            </div>
+            
+
+            <div class="img-conteiner">
+                <img src="../imgs/Logo-nomelado.png" alt="">
+            </div>
+            <h2>Cadastro para Parceiros</h2>
+            
+            <!--EMPRESA-->
+            <div class="label-float"> 
+                <label id="labelEmpresa" for="empresa">Nome da Empresa</label>
+                <input type="text" name="empresa" id="empresa" placeholder="Digite o nome da empresa" required>            
+            </div>
+
+            <!--EMAIL-->
+            <div class="label-float"> 
+                <label id="labelEmail" for="e-mail">E-mail</label>
+                <input type="email" name="e-mail" id="e-mail" placeholder="Digite o e-mail da empresa" required>           
+            </div>
+
+            <!-- Telefone -->
+            <div class="label-float">
+                <label id="labelTelefone" for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" placeholder="Digite o telefone de contato" required>
+            </div>
+
+            <!-- CNPJ -->
+            <div class="label-float">
+                <label id="labelCnpj" for="cnpj">CNPJ</label>
+                <input type="text" name="cnpj" id="cnpj" placeholder="Digite o CNPJ" required>
+            </div>
+
+            <!--CEP-->
+            <div class="label-float">
+                <label id="labelCEP" for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" required>
+            </div>
+
+            <!--SENHA-->
+            <div class="label-float">
+                <label id="labelSenha" for="senha">Digite sua senha</label>
+                <i class="fa-solid fa-eye fa-eye-slash eye-senha" id="btn-senha" onclick="mostrarSenha()"></i>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                
+
+            </div>
+
+            <!--CONFIRM SENHA-->
+            <div class="label-float">
+                <label id="labelConfirmSenha" for="confirm-senha">Confirme sua senha</label>
+                <i class="fa-solid fa-eye fa-eye-slash" id="btn-confirm-senha" onclick="mostrarConfirmSenha()"></i>
+                <input type="password" name="confirm-senha" id="confirm-senha" placeholder="Digite sua senha novamente" required>  
+            </div>
+
+            <div>
+                <button onclick="cadastrar()">Cadastrar</button>
+            </div>
+
+        </div>
+        </div>
+
+</div> <!--FIM DIV CONTEINER-->
+
+<!-- CRIAR SCRIPT PARA CADASTRO DA EMPRESA -->
+<script src="../js/cadastro-empresa.js"></script>
+
+    
+</body>
+</html>

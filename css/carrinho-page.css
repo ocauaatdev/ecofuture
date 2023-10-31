@@ -1,0 +1,660 @@
+.textPrincipal{
+    text-align: center;
+    color: #1C4C4E;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+.errorMessage{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+  }
+
+
+
+.imgproduto{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+}
+.produtoInfoConteiner{
+    background-color: rgb(238, 236, 236);
+    display: flex;
+    padding: 30px;
+    margin-left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%);
+    border-radius: 20px;
+    width: 850px;
+}
+.produtoInfoConteiner h3{
+    color: #1C4C4E;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.item-top{
+    display: grid;
+    grid-template-rows: repeat(3, 50px); 
+    margin-left: 30px;
+}
+.item-top p{
+    font-size: small;
+    width: 550px;
+}
+.preco{
+    color: #EC9A36;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+.item-footer{
+    display: flex;
+    margin-top: 130px;
+    margin-left: -150px;
+}
+.quandtidadeProd{
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    border: solid 1px #d1bfbf;
+    margin: 0;
+}
+.a{
+    margin: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    border: solid 1px #d1bfbf;
+}
+.b{
+    margin: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    border: solid 1px #d1bfbf;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 70px;
+  }
+  
+  /* Esconder o checkbox padrão */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Criar o checkbox customizado */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #acacac;
+    border-radius: 2px;
+  }
+  
+  /* Adicionar uma cor de fundo cinza ao passar o mouse */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* Quando o checkbox é clicado, adicionar um fundo rosa */
+  .container input:checked ~ .checkmark {
+    background-color: #100f0f;
+  }
+  
+  /* Criar o ícone de check, escondido quando não estiver selecionado */
+  .container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  /* Exibir o ícone quando selecionado */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+#removeButton{
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    margin-top: 130px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.summary{
+  width: 850px;
+  margin-top:20px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0px -11px 29px -3px rgb(149, 149, 149);
+-webkit-box-shadow: 0px -11px 29px -3px rgba(99,99,99,1);
+-moz-box-shadow: 0px -11px 29px -3px rgba(99,99,99,1);
+}
+
+.cartCupom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 400px;
+}
+
+.cartCupom i{
+  color: #1fb56f;
+  font-size: 1.5rem;
+}
+.cartCupom span{
+  margin-left: 10px;
+}
+
+#cupomItem{
+  margin-left: 210px;
+}
+
+.textCart{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.textCart h4{
+  width: 200px;
+  margin-left: 25px;
+}
+.textCart button{
+  background-color: #1C4C4E;
+  color: #fff;
+  width:100px;
+  height:50px;
+  cursor: pointer;
+  border-radius:10px;
+  border:none;
+  margin-left: 15px;
+}
+.textCart span{
+  margin-left: 15px;
+  color: #EC9A36;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.textCart h3{
+  margin-left: 40%;
+}
+.textCart input{
+  position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.check {
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #acacac;
+  border-radius: 2px;
+}
+
+/* Adicionar uma cor de fundo cinza ao passar o mouse */
+.summaryConteiner:hover input ~ .check {
+  background-color: #ccc;
+}
+
+/* Quando o checkbox é clicado, adicionar um fundo rosa */
+.summaryConteiner input:checked ~ .check {
+  background-color: #100f0f;
+}
+
+/* Criar o ícone de check, escondido quando não estiver selecionado */
+.summaryConteiner .check:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Exibir o ícone quando selecionado */
+.summaryConteiner input:checked ~ .check:after {
+  display: block;
+}
+
+.rodape{
+  margin-top:0;
+}
+
+
+@media (min-width: 769px) and (max-width:869px) {
+  /* Alterações para telas maiores */
+  .produtoInfoConteiner{
+    background-color: rgb(238, 236, 236);
+    display: flex;
+    padding: 30px;
+    margin-left:50% ;
+    margin-top: 20px;
+    transform: translate(-50%);
+    border-radius: 20px;
+    width: 750px;
+}
+.produtoInfoConteiner h3{
+  color: #1C4C4E;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+.item-top{
+  display: grid;
+  grid-template-rows: repeat(3, 50px); 
+  margin-left: 15px;
+}
+.item-top p{
+  font-size: small;
+  width: 485px;
+}
+.preco{
+  color: #EC9A36;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: 35px;
+}
+
+.item-footer{
+  display: flex;
+  margin-top: 140px;
+  margin-left: -150px;
+}
+.summary{
+  width: 750px;
+  margin-top:20px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0px -11px 29px -3px rgb(149, 149, 149);
+-webkit-box-shadow: 0px -11px 29px -3px rgba(99,99,99,1);
+-moz-box-shadow: 0px -11px 29px -3px rgba(99,99,99,1);
+}
+.cartCupom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 400px;
+}
+#cupomItem{
+  margin-left: 110px;
+}
+
+.imgproduto{
+  width: 170px;
+  height: 170px;
+  border: 1px solid rgba(0, 0, 0, 0.315);
+}
+
+}
+
+
+@media (min-width: 669px) and (max-width: 768px) {
+  /* Alterações para telas de tamanho médio */
+  .produtoInfoConteiner{
+    background-color: rgb(238, 236, 236);
+    display: flex;
+    padding: 30px;
+    margin-left:50% ;
+    margin-top: 20px;
+    transform: translate(-50%);
+    border-radius: 20px;
+    width: 650px;
+}
+.produtoInfoConteiner h3{
+  color: #1C4C4E;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+.item-top{
+  display: grid;
+  grid-template-rows: 50px,0,50px; 
+  margin-left: 15px;
+}
+.item-top p{
+  visibility: hidden;
+  font-size: small;
+  width: 385px;
+}
+.preco{
+  color: #EC9A36;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: -40px;
+}
+
+.item-footer{
+  display: flex;
+  margin-top: 120px;
+  margin-left: -65%;
+  transform: translate(0);
+}
+#removeButton{
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+  margin-top: 120px;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.summary{
+  width: 650px;
+  margin-top:20px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0px -11px 29px -3px rgb(149, 149, 149);
+-webkit-box-shadow: 0px -11px 29px -3px rgba(99,99,99,1);
+-moz-box-shadow: 0px -11px 29px -3px rgba(99,99,99,1);
+}
+.cartCupom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 300px;
+}
+#cupomItem{
+  margin-left: 110px;
+}
+.textCart{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.textCart h4{
+  width: 80px;
+  font-size:1.5rem;
+  margin-left: 25px;
+}
+.textCart button{
+  background-color: #1C4C4E;
+  color: #fff;
+  width:100px;
+  height:50px;
+  border-radius:10px;
+  border:none;
+  margin-left: 15px;
+}
+.textCart span{
+  margin-left: 15px;
+  color: #EC9A36;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.textCart h3{
+  margin-left: 40%;
+}
+
+.imgproduto{
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.315);
+}
+
+}
+
+@media (min-width: 489px) and (max-width: 668px){
+  /* Alterações para telas menores */
+  .textPrincipal{
+    text-align: center;
+    color: #1C4C4E;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    margin-top: 5%;
+}
+  .produtoInfoConteiner{
+    background-color: rgb(238, 236, 236);
+    display: flex;
+    padding: 30px;
+    margin-left:50% ;
+    margin-top: 20px;
+    transform: translate(-50%);
+    border-radius: 0px;
+    width: 450px;
+}
+.produtoInfoConteiner h3{
+  color: #1C4C4E;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.item-top{
+  display: grid;
+  grid-template-rows: 50px,0,50px; 
+  margin-left: 15px;
+}
+.item-top p{
+  visibility: hidden;
+  font-size: small;
+  width: 250px;
+}
+.preco{
+  color: #EC9A36;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: -40px;
+}
+
+.item-footer{
+  display: flex;
+  margin-top: 120px;
+  margin-left: -65%;
+  transform: translate(0);
+}
+#removeButton{
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+  margin-top: 120px;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.summary{
+  width: 450px;
+  margin-top:20px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0px -11px 29px -3px rgb(149, 149, 149);
+-webkit-box-shadow: 0px -11px 29px -3px rgba(99,99,99,1);
+-moz-box-shadow: 0px -11px 29px -3px rgba(99,99,99,1);
+}
+.cartCupom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+#cupomItem{
+  margin-left: 110px;
+}
+.textCart{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.textCart h4{
+  font-size:1.5rem;
+  margin-left: 25px;
+}
+.textCart button{
+  background-color: #1C4C4E;
+  color: #fff;
+  width:100px;
+  height:50px;
+  border-radius:10px;
+  border:none;
+  margin-left: 15px;
+}
+.textCart span{
+  margin-left: 15px;
+  color: #EC9A36;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.textCart h3{
+  margin-left:25px;
+}
+
+.imgproduto{
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.315);
+}
+}
+
+@media (max-width:488px){
+  .produtoInfoConteiner{
+    background-color: rgb(238, 236, 236);
+    display: flex;
+    padding: 30px;
+    margin-left:50% ;
+    margin-top: 20px;
+    transform: translate(-50%);
+    border-radius: 0px;
+    width: 430px;
+}
+.produtoInfoConteiner h3{
+  color: #1C4C4E;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+.item-top{
+  display: grid;
+  grid-template-rows: 50px,0,50px; 
+  margin-left: 10px;
+}
+.item-top p{
+  visibility: hidden;
+  font-size: small;
+  width: 240px;
+}
+.preco{
+  color: #EC9A36;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: -45px;
+}
+
+.item-footer{
+  display: flex;
+  margin-top: 115px;
+  margin-left: -65%;
+  transform: translate(0);
+}
+#removeButton{
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+  margin-top: 110px;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.summary{
+  width: 450px;
+  margin-top:20px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0px -11px 29px -3px rgb(149, 149, 149);
+-webkit-box-shadow: 0px -11px 29px -3px rgba(99,99,99,1);
+-moz-box-shadow: 0px -11px 29px -3px rgba(99,99,99,1);
+}
+.cartCupom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+#cupomItem{
+  margin-left: 110px;
+}
+.textCart{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.textCart h4{
+  font-size:1.5rem;
+  margin-left: 25px;
+}
+.textCart button{
+  background-color: #1C4C4E;
+  color: #fff;
+  width:100px;
+  height:50px;
+  border-radius:10px;
+  border:none;
+  margin-left: 15px;
+}
+.textCart span{
+  margin-left: 15px;
+  color: #EC9A36;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.textCart h3{
+  margin-left:25px;
+}
+
+.imgproduto{
+  width: 140px;
+  height: 140px;
+  border: 1px solid rgba(0, 0, 0, 0.315);
+}
+}

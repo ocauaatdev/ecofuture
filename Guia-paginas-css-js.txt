@@ -1,0 +1,29 @@
+----------CARDS DOS PRODUTOS GUIA-------------
+
+O cards-dos-produtos.css é o estilo dos produtos que ficam exibidos nos cards.
+cada produto recebe uma function, por exemplo: onclick="addToCart('card4')"
+A cada card que for colocado na tela, mudar o numero dele na função. Por exemplo, se for o card6
+ficara: onclick="addToCart('card6')"
+
+----------MENU E RODAPE--------------------
+o estilo menu-rodape.css é responsavel por trazer o estilo automatico das páginas, já que são padrão.
+
+-----------HOME PAGE------------------
+O estilo homepage-style.css e responsive-homepage.css são uteis, pois são basicamente a formatação
+padrão das páginas, podem ser usados em páginas que não alteram tanto.
+
+---------SALVAR PAGINA--------------
+Em todas as páginas em que o menu ficar exibido, deve receber a função de Salvar página.
+Por exemplo, a página home possui o salvamento da pagina, pois caso o usuario decida logar na pagina home, após ele ter logado ele voltara para pagina home. Caso ele logue na pagina de compra, apos o login ele voltara para pagina de compra, ja que essa pagina foi salva como a ultima q ele acessou.
+Para salvar a pagina basta colar o script <script src="../js/salvarpagina.js"></script>
+
+-----------SCRIPT MENUS-----------------
+Serve basicamente para manter o menu lateral e o sub-menu dropdown dos categorias funcionando. Importante colocar esse script em paginas que tem o menu. Basta colocar o SCRIPT
+<script src="../js/menus.js"></script>
+
+---------SCRIPT LOGAR E SAIR-------------------
+Serve para o usuario logar e deslogar, essencial em paginas que tem o menu exibido.
+<script src="../js/logar-e-sair.js"></script>
+
+-------------SCRIPT ADD TO CART-----------------
+Serve para o usuario adicionar um produto ao carrinho. Essencial nas paginas que os produtos são exibidos. <script src="../js/addcart.js"></script>

@@ -1,0 +1,267 @@
+.conteiner-perfil{
+    display: flex;
+}
+.opcoes-perfil{
+    background-color: #08313B;
+    width: 400px;
+    height: 100vh;
+}
+.perfil-infos{
+    height: 80px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+.perfil-infos i{
+    font-size: 50px;
+    margin-right: 10px;
+}
+.perfil-infos span{
+    font-weight: 600;
+}
+.config-conta,.meus-produtos,.envio,.notificacoes{
+    background-color: #15515E;
+    margin-bottom: 10px;
+    height: 60px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+.config-conta i,.meus-produtos i,.envio i,.notificacoes i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.conteudo-perfil{
+    background-color: #D7D7D7;
+    width: 100%;
+    margin: 2% 2% 2% 2%;
+    border-radius: 20px;
+    padding: 15px;
+    overflow-y: scroll;
+}
+.config-contaConteudo{
+    padding: 40px;
+}
+.config-contaConteudo div{
+    display: flex;
+    justify-content: space-between;
+}
+.config-contaConteudo h2{
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+.config-contaConteudo p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.config-contaConteudo button{
+    width: 120px;
+    height: 55px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #1C4C4E;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+.save{
+    text-transform: uppercase;
+    background-color: #1C4C4E;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+.meusProdutosConteudo{
+    padding: 40px;
+}
+.meusProdutosConteudo div .titulo{
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+.meu-produto{
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.meu-produto img{
+    width: 250px;
+    margin-right: 10px;
+}
+.infoProduto{
+    margin-right: 15px;
+}
+.meu-produto .infoProduto h2{
+    text-transform: uppercase;
+    color: #08313B;
+    font-weight: 800;
+}
+.meu-produto .infoProduto p{
+    font-size: 15px;
+    text-align: justify;
+    color: rgb(44, 44, 44);
+}
+.opcoes-produto{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.opcoes-produto button{
+    width: 120px;
+    height: 55px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #1C4C4E;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+.mostrarEnvioConteudo{
+    padding: 40px;
+}
+.mostrarEnvioConteudo div .titulo{
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+.pedido{
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.pedido img{
+    width: 250px;
+    margin-right: 20px;
+}
+.pedido h2{
+    text-transform: uppercase;
+    color: #08313B;
+    font-weight: 800;
+    font-size: 30px;
+}
+.pedido p{
+    font-size: 20px;
+    text-align: justify;
+    color: rgb(44, 44, 44);
+}
+.pedido button{
+    width: 100%;
+    height: 55px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #1C4C4E;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    font-size: 19px;
+}
+.conteiner-confirm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.confirmacao{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: -300px;
+    width: 600px;
+    height: 400px;
+    background-color: #08313B;
+    padding: 20px;
+    border-radius: 5px;
+}
+.confirmacao h1{
+    margin-bottom: 15px;
+    color: #00CC6C;
+}
+.confirmacao p{
+    font-size: 21px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-align: justify;
+}
+.confirmacao button{
+    margin-top: 25px;
+    width: 100%;
+    background-color: #00CC6C;
+    border: none;
+    color: #05414B;
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.tituloConfirm{
+    display: flex;
+    justify-content: space-between;
+}
+.confirmacao i{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+.notificacao i{
+    font-size: 60px;
+}
+.notificacao{
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+.notificacao h3{
+    font-size: 25px;
+}
+.notificacoesConteudo{
+    padding: 40px;
+}
+.notificacoesConteudo div h2{
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+@media (max-width:650px) {
+    .notificacao{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 4rem 10rem 6rem;
+    }
+    .notificacao h3{
+        font-size: 16px;
+    }
+    .notificacao i{
+        font-size: 30px;
+    }
+}

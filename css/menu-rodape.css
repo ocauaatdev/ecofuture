@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins'
+}
+.logo-texto{
+    width: 200px;
+}
+.logo-icone{
+    width: 60px;
+    display: none;  
+}
+.cabecalho{
+    background-color: #05414B;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    line-height: 40px;
+    border-bottom: 1px solid rgba(20, 20, 20, 0.247);
+}
+.cabecalho a{
+    text-decoration: none;
+}
+.logoEco{
+    display: flex;
+    align-items: center;
+}
+.txtCabecalho{
+    color: #fff;
+    font-weight: 300;
+    height: 100%;
+}
+.txtCabecalho a{
+    color: #fff;
+}
+.btnCategorias{
+    cursor: pointer;
+}
+.txtCabecalho .opcoesMenu{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/*DROPDOWN*/
+.dropdown{
+    padding: 15px;
+    list-style: none;
+    display: none;
+    gap: 1rem;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    background-color: #083b46;
+}
+.dropdown.exibir{
+    display: flex;
+}
+.dropdown li:hover{
+    transform: scale(1.1);
+}
+
+/*BARRA DE PESQUISA*/
+.search{
+    position: relative;
+    width: 370px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 0;
+    background: #fff;
+    border-radius: 60px;
+    transition: 0.5s;
+    border: 1px solid rgba(31, 30, 30, 0.308);
+    overflow: hidden;
+}
+.search .lupa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.822);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px #404040;
+    z-index: 1000;;
+    cursor: pointer;
+}
+.search .lupa::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #49897a;
+    border-radius: 50%;
+    transform: translate(-3px, -3px);
+}
+.search .lupa::after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 9px;
+    background-color: #49897a;
+   transform: translate(4px, 4px) rotate(315deg);
+}
+.search .input{
+    position: relative;
+    width: 400px;
+    height: 40px;
+    left: 50px;
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+}
+.search .input input{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.clear{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clear::before{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #49897a;
+    transform: rotate(45deg);
+}
+.clear::after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #49897a;
+    transform: rotate(315deg);
+}
+::placeholder{
+    font-family: 'Poppins';
+}
+
+/*FIM DA BARRA DE PESQUISA*/
+
+/*ICONES*/
+.menuicon{
+    padding: 10px;
+    color: #fff;
+}
+.icon{
+    font-size: 24px;
+}
+.menuhamburguer{
+    display: none;
+}
+.iconesMenu{
+    display: flex;
+    list-style: none;
+}
+.item-count{
+    position: absolute;
+    z-index: 1;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    width: 1.5em; /* Ajuste o tamanho do círculo conforme necessário */
+    height: 1.5em; /* Ajuste o tamanho do círculo conforme necessário */
+    border-radius: 50%;
+    margin-top: -1.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+/*DROPDOWN PERFIL*/
+.dropdownPerfil{
+    width: 200px;
+    padding: 15px;
+    list-style: none;
+    display: none;
+    gap: 0.5rem;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    background-color: #083b46;
+}
+.dropdownPerfil a{
+    color: #fff;
+    font-weight: 600;
+}
+.iconPerfil:hover .dropdownPerfil {
+    display: block;
+  }
+.dropdownPerfil li:hover{
+    transform: scale(1.1);
+}
+
+/*MENU LATERAL*/
+.menuLateral{
+    z-index: 1000;
+    background-color: #093841;
+    width: 250px;
+    height: 1580px;
+    position: absolute;
+    border-radius: 0px 0px 80px 0px;
+    left: -250px;
+    transition: left 0.5s;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.521); 
+}
+.menuLateral h3{
+    color: white;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.menuLateral ul li{
+    line-height: 40px;
+    border-bottom: 1px solid white;
+}
+.menuLateral ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding-left: 30px;
+    display: block;
+    transition: 0.5s;
+    font-size: 20px;
+    font-weight: 600;
+}
+.menuLateral ul li a:hover{
+    background-color: #0A242A;
+    color: #28B67E;
+}
+.menuLateral ul ul li a{
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 60px;
+    background-color: #0b2930;
+}
+.menuLateral ul ul{
+    display: none;
+}
+.menuLateral ul .firstOption.mostra{
+    display: block;
+}
+.menuLateral ul .secondOption.mostra{
+    display: block;
+}
+.menuLateral.mostra{
+    left: 0;
+}
+.btnFechar{
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 30px;
+ }
+.menuLateral ul li a i{
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+}
+/*FIM MENU LATERAL*/
+
+/*RODAPE*/
+.rodape{
+    background-color: #0A242A;
+    margin-top: 170px;
+    height: 100%;
+    padding: 30px;
+}
+.quemsomos{
+    width: 345px; 
+    font-size: 19px;
+    text-align: justify;
+    display: inline-block;
+    
+}
+.quemsomos h3{
+    color: #28B67E;
+}
+.quemsomos p{
+    color: white;
+}
+.suporte{
+    font-size: 19px;
+    text-align: left;
+    width: 345px;
+    display: inline-block;
+    
+}
+.suporte h3{
+    color: #28B67E;
+}
+.suporte button{
+    background-color: #041418;
+    border: none;
+    color: white;
+    font-size: 17px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+.suporte span{
+    float: right;
+}
+#resposta1,#resposta2,#resposta3,#resposta4{
+    background-color: #071e24;
+    display: none;
+    font-size: 15px;
+    color: white;
+    padding: 2px;
+}
+.contato{
+    font-size: 19px;
+    width: 345px;
+    color: white;
+    display: inline-block;
+}
+.contato h3{
+    color: #28B67E;
+}
+.contato a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.contato a:hover{
+    color: #28B67E;
+}
+.info-rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*EMPRESAS CARDS*/
+.empresas{
+    margin-top: 5%;
+}
+.empresas h1{
+    text-align: center;
+    color: #28B67E;
+}
+.emprecard{
+    position: relative;
+    width: 228px;
+    height: 210px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: inline-block;
+    background-color: #29535C;
+    box-shadow: 0px 10px 40px #00000056;
+    align-items: center;
+    
+}
+.logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.direito-autoral{
+    background-color: #071e24;
+    color: white;
+    text-align: center;
+}
+
+.custom-alert {
+    position: fixed;
+    top: -60px; /* Inicialmente, o alerta está fora da tela */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0b2930;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    z-index: 1000;
+    transition: top 0.5s; /* Adicione uma transição suave para o movimento */
+}
+
+.custom-alert.show {
+    top: 10px; /* Mostra o alerta descendo de cima para baixo */
+}
+
+
+/* RESPONSIVIDADE ITEMCOUNT */
+@media (max-width:1440px) {
+    .item-count{
+        margin-top: -2%;
+    }
+}
+@media(max-width:970px){
+    .item-count{
+        margin-top: -2.5%;
+    }
+}
+@media(max-width:650px){
+    .item-count{
+        margin-top: -3%;
+    }
+    .custom-alert {
+        top: -70px; /* Inicialmente, o alerta está fora da tela */
+    }
+    
+    .custom-alert.show {
+        top: 10px; /* Mostra o alerta descendo de cima para baixo */
+    }
+}
+@media(max-width:530px){
+    .item-count{
+        margin-top: -5%;
+    }
+}

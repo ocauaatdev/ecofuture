@@ -1,0 +1,47 @@
+.conteiner-perfil-mobile{
+    display: none;
+}
+.opcoes-perfil-mobile{
+    background-color: #08313B;
+    width: 100%;
+    height: 100vh;
+}
+.perfil-infos{
+    height: 80px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+.perfil-infos i{
+    font-size: 50px;
+    margin-right: 10px;
+}
+.opcoes-perfil-mobile .perfil-infos span{
+    font-weight: 600;
+}
+.config-conta,.favoritos,.meus-pedidos,.acompanhar-pedido,.cancelar,.trocar,.premium,.notificacoes{
+    background-color: #15515E;
+    margin-bottom: 10px;
+    height: 60px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+.config-conta i,.favoritos i,.meus-pedidos i,.acompanhar-pedido i,.cancelar i,.trocar i,.premium i,.notificacoes i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+@media(max-width:980px){
+    .conteiner-perfil{
+        display: none;
+    }
+    .conteiner-perfil-mobile{
+        display: block;
+    }
+}

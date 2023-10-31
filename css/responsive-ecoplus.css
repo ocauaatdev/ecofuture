@@ -1,0 +1,221 @@
+@media (max-width:1372px){
+    .planos{
+        grid-template-columns: 380px 380px 380px;
+    }
+    .plano{
+        margin-left: 20px;
+        height: 530px;
+    }
+}
+
+@media(max-width:1215px){
+    .planos{
+        grid-template-columns: 360px 360px 360px;
+    }
+    .plano{
+        height: 550px;
+    }
+    
+}
+
+@media(max-width:1135px){
+    .planos{
+        grid-template-columns: 340px 340px 340px;
+    }
+    .txtPremium{
+            font-size: 14px;
+    }
+    }
+
+@media(max-width:1090px){
+    .planos{
+        grid-template-columns: 320px 320px 320px;
+    }
+    .precoPlano{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width:1078px){
+    .planos{
+        grid-template-columns: 300px 300px 300px;
+    }
+    .plano{
+        height: 620px;
+    }
+
+}
+
+@media(max-width:1040px){
+    .planos{
+        grid-template-columns: 280px 280px 280px;
+    }
+    .plano{
+        height: 660px;
+    }
+}
+
+@media(max-width:1010px){
+    /* .planos{
+        grid-template-columns: 260px 260px 260px;
+    } */
+    .plano{
+        margin-left: 10px;
+    }
+}
+
+@media(max-width:970px){
+    .quemsomos{
+        width: 230px;
+        font-size: 15px;
+    }
+    .suporte{
+        width: 230px;
+        font-size: 15px;
+    }
+    .colaboradores{
+        width: 230px;
+        font-size: 15px;
+    }
+    .premium-info{
+        flex-direction: column;
+    }
+    .txtPremium{
+        font-size: 18px;
+    }
+    .imgPremium img{
+        display: none;
+    }
+}
+
+@media(max-width:940px){
+    .emprecard{
+        width: 195px;
+        height: 175px;
+    }
+}
+
+@media(max-width:930px){
+    .img-conteiner{
+        height: 260px;
+    }
+    #prev-btn, #next-btn{
+        height: 260px;
+    }
+}
+
+@media(max-width:916px){
+    .planos{
+        margin-top: 20px;
+        display: block;
+        align-items: center;
+    }
+    .plano{
+        width: 400px;
+        margin-top: 40px;
+        margin-left: 50%;
+        height: 460px;
+        transform: translate(-50%);
+    }
+}
+
+@media(max-width:840px){
+    .logos{
+        flex-wrap: wrap;
+    }
+    .emprecard{
+        margin-bottom: 5%;
+    }
+}
+
+@media(max-width:830px){
+    .quemsomos{
+        width: 175px;
+        font-size: 13px;
+    }
+    .suporte{
+        width: 175px;
+        font-size: 13px;
+    }
+    .colaboradores{
+        width: 175px;
+        font-size: 13px;
+    }
+    
+}
+
+@media(max-width:776px){
+}
+
+@media(max-width:663px){
+    .imgPremium img{
+        display: block;
+        width: 450px;
+        height: 450px;
+    }
+    .planos{
+        margin-top: 20px;
+        display: block;
+        align-items: center;
+    }
+    .plano{
+        width: 400px;
+        margin-top: 40px;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+
+    .assinatura{
+        top: 15rem;   
+        transform: translate(-50%,0);
+        width: 500px;
+        height: 400px;
+    }
+    .content{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .assinatura h1{
+        font-size: 1.5rem;
+    }
+    .assinatura h2{
+        font-size: 1rem;
+    }
+    .txtBaixo{
+        margin-top: 90px;
+    }
+    .assinatura button{
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #28B67E;
+        color: #083b46;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .assinatura select{
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        color: #083b46;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 150px;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:615px){
+    .txtPremium{
+        font-size: 16px;
+    }
+}
+@media(max-width:530px){
+    .txtPremium{
+        font-size: 14px;
+    }
+}

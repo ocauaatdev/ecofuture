@@ -1,0 +1,144 @@
+.conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+.produto-img{
+    width: 500px;
+    border: 1px solid rgb(85, 85, 85);
+    margin-right: 20px;
+}
+.produto-info{
+    width: 800px;
+}
+.produto-info p{
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #444444;
+}
+.produto-info .preco-produto{
+    color: rgb(255, 136, 0);
+}
+.produto-info h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #0A242A;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.produto-info .adicionar-carrinho{
+    background-color: #1C4C4E;
+}
+.produto-info .comprar{
+    background-color: #d89416;
+}
+.produto-info button{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-weight: bold;  
+    margin-top: 2%; 
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 20px;
+    font-size: 15px;  
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    border: none;
+    margin-right: 10px;
+    color: white;
+}
+.produto-info button:hover{
+    transform: scale(1.1);
+}
+.produto-info .fa-heart{
+    color: #0A242A;
+    font-size: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/*FIM CONTEINER PRODUTO PRINCIPAL*/
+
+.txtdestaq h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #0A242A;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+/*CARDS*/
+.cards{
+    display: flex;
+    gap: 3.5rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgproduto{
+    width: 275px;
+    height: 240px;
+}
+.produto{
+    width: 295px;
+    height: 325px;
+    padding: 10px;
+    position: relative;
+    border: 1px solid #58585862;
+    transition: ease-in-out 0.5s;
+}
+.produto:hover{
+    transform: scale(1.1);
+    /*box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.281);*/
+}
+
+.produto i{
+    position: absolute;
+    background-color: #1C4C4E;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    right: 0;
+    bottom: 0;
+}
+.produto h3{
+    text-transform: uppercase;
+    color: #1C4C4E;
+}
+.produto span{
+    color: #1C4C4E;
+    font-weight: 500;
+}
+/*FIM DOS DESTAQUES*/
+
+/*RESPONSIVIDADE*/
+@media(max-width:927px){
+    .conteiner{
+        display: block;
+        padding: 0;
+    }
+    .produto-img{
+        width: 100%;
+    }
+    .produto-info{
+        padding: 40px;
+        width: auto;
+    }
+}
+@media(max-width:574px){
+    .txtdestaq h3{
+        font-size: 20px;
+    }
+}
+@media(max-width:521px){
+    .produto-info .fa-heart{
+        font-size: 20px;
+    }
+    .produto-info button{
+        padding: 15px 10px;
+        font-size: 16px;
+    }
+}
